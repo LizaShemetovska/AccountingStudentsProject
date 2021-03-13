@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 
 namespace API
 {
@@ -30,10 +31,10 @@ namespace API
             services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StudentsAccounting")));
             services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<DataContext>();
             services.AddControllers();
-            //services.AddSpaStaticFiles(configuration =>
-            //{
-            //    configuration.RootPath = "client-app/build";
-            //});
+            services.AddSpaStaticFiles(configuration =>
+            {
+               configuration.RootPath = "client-app/build";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,15 +53,15 @@ namespace API
             {
                 endpoints.MapControllers();
             });
-            //app.UseSpa(spa =>
-            //{
-            //    spa.Options.SourcePath = "client-app";
+            app.UseSpa(spa =>
+            {
+               spa.Options.SourcePath = "client-app";
 
-            //    if (env.IsDevelopment())
-            //    {
-            //        spa.UseReactDevelopmentServer(npmScript: "start");
-            //    }
-            //});
+               if (env.IsDevelopment())
+               {
+                   spa.UseReactDevelopmentServer(npmScript: "start");
+               }
+            });
         }
     }
 }

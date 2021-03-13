@@ -61,3 +61,6 @@ C:\Users\Lisa\Desktop\HoneyComb Project\StudentsAccounting\API\bin\Debug\net5.0\
 C:\Users\Lisa\Desktop\HoneyComb Project\StudentsAccounting\API\bin\Debug\net5.0\DAL.dll
 C:\Users\Lisa\Desktop\HoneyComb Project\StudentsAccounting\API\bin\Debug\net5.0\DAL.pdb
 C:\Users\Lisa\Desktop\HoneyComb Project\StudentsAccounting\API\obj\Debug\net5.0\API.csproj.CopyComplete
+C:\Users\Lisa\Desktop\HoneyComb Project\StudentsAccounting\API\bin\Debug\net5.0\client-app\package.json
+C:\Users\Lisa\Desktop\HoneyComb Project\StudentsAccounting\API\bin\Debug\net5.0\client-app\public\manifest.json
+C:\Users\Lisa\Desktop\HoneyComb Project\StudentsAccounting\API\bin\Debug\net5.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
