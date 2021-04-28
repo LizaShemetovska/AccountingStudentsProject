@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App/App';
+import '../node_modules/antd/dist/antd.css';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Router } from "react-router-dom";
+import { Provider } from "react-redux";
+import { createBrowserHistory } from "history";
+import ApiStoreService from "./services/api-service";
+import { ApiStoreServiceProvider } from "./components/api-service-context/api-service-context";
+import store from "./store";
+import 'bootstrap/dist/css/bootstrap.min.css';
+const apiStoreService = new ApiStoreService();
+
+export const history = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+<Provider store={store}>
+    <ApiStoreServiceProvider value={apiStoreService}>
+      <Router history={history}>
+        <App/>
+      </Router>
+    </ApiStoreServiceProvider>
+</Provider>, 
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

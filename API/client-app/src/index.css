@@ -1,13 +1,263 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+ .container_row_registerpage{
+     min-height: 100vh;
+ }
+ .container_row_loginpage{
+  min-height: 100vh;
+}
+.ant-menu-horizontal{
+  border-bottom: none;
+}
+ #registr_page{
+     margin: 0 0 10px 0;
+     color: #ffffff;
+     text-align: center;
+     font-size: 30px;
+     font-weight: 500;
+ }
+ @media screen and (min-width: 576px) {
+  .register-form{
+    width: 400px ;
+}
+.login-form{
+  width: 400px ;
+}
+}
+ @media screen and (max-width: 576px) {
+  .register-form{
+      width: auto ;
+  }
+  .login-form{
+    width: auto ;
+}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ .register-form {
+      background:  #969696;
+      opacity: 90%;
+    
+      margin: 0 auto;
+      padding: 2em;
+      border-radius: 10px;
+      box-sizing: border-box;
+      border: 1px solid #b0b0a9
+   } 
+   .confirmemail-form {
+    background:  #969696;
+    opacity: 90%;
+    width: 400px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #b0b0a9;
+    text-align: center;
+    color: white;
+ } 
+ .tmp{
+   display: flex;
+   justify-content: center;
+   background: url("../src/img/cover4.jpg")  no-repeat 0px 0px;
+     min-height: 100vh;
+     background-size: cover;
+ }
+ 
+ .ant-form-item-label .label{
+     color: white;
+ }
+ .register-form-btn{
+ background-color: #fc3955;
+ color:white;
+ width:100%;
+ border:none;
+ }
+ .register-form-link{
+  background-color: #fc3955;
+  padding: 5px 10px 5px 10px;
+  color:white;
+
+ }
+ .register-form-link:hover{
+  background-color: #fc3955;
+  color:white;
+}
+ .register-form-btn:hover{
+     background-color: #fc3955;
+     color:white;
+ }
+ .register-form-btn:active{
+  background-color: #fc3955;
+  color:white;
+}
+.register-form-btn:focus{
+  background-color: #fc3955;
+  color:white;
+}
+ .ant-form-item-explain.ant-form-item-explain-error{
+     color: white;
+ }
+
+ #login_page{
+  margin: 0 0 10px 0;
+     color: #ffffff;
+     text-align: center;
+     font-size: 30px;
+     font-weight: 500;
+ }
+ .login-form {
+      background:  #969696;
+      opacity: 90%;
+    
+      margin: 0 auto;
+      padding: 2em;
+      border-radius: 10px;
+      box-sizing: border-box;
+      border: 1px solid #b0b0a9
+   } 
+
+ .ant-form-item-label > label{
+     color: white;
+ }
+ .login-form-button{
+ background-color: #fc3955;
+  color:white;
+  width:100%;
+  border:none;}
+  .login-form-button:hover{
+     background-color: #fc3955;
+     color:white;
+ }
+ .login-form-button:active{
+  background-color: #fc3955;
+  color:white;
+}
+.login-form-button:focus{
+  background-color: #fc3955;
+  color:white;
+}
+ #components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+ 
+  width: 100%;
+}
+.color_icon{
+    color: #fc3955;
+}
+.header_menu{
+  background-color: #969696;
+  border-bottom:none;
+}
+.name_header{
+  color:white;
+  font-size: 24px;
+  margin:10px 0 10px 0;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menuitem_header:hover{
+  border-bottom:none;
+}
+.menuitem_header:active{
+  border-bottom:none;
+}
+.header_username{
+  color:white;
+  font-size: 14px;
+  
+}
+.header-fixed  h4 {
+ 
+      margin-top: 15px;
+      margin-bottom: 20px;
+  }
+  .ant-menu-submenu-popup > .ant-menu{
+    background-color: #969696;
+    opacity:90%;
+    width:100%;
+  }
+  .ant-menu-submenu-title span{
+font-size: 26px;
+color:white;
+  }
+  .ant-menu-submenu-title span:hover{
+    color:white;
+      }
+      .ant-menu-submenu-title span:active{
+        color:white;
+          }
+          .ant-input-search-button{
+            background-color: #fc3955;
+              font-family: 'Candara';
+               color: white;
+                border:none
+        }
+        .ant-input-search-button:hover{
+          background-color: #fc3955;
+            font-family: 'Candara';
+             color: white;
+              border:none;
+            
+      }
+      .pagination_table{
+        border:#fc3955
+      }
+.update_user_h1{
+  color: #969696;
+  font-family: 'Candara';
+  text-align: center;
+  margin-top: 20px;
+}
+.update_user_p{
+  color: #969696;
+  font-family: 'Candara';
+  margin-right: 2px;
+
+}
+.update_user_input{
+  color: #969696;
+  font-size: 16px;
+
+}
+.update-form-btn-saved{
+  background-color: #fc3955;
+  color:white;
+
+  border:none;
+  width: 100%;
+  }
+  .update-form-btn-saved:hover{
+    background-color: #fc3955;
+    color:white;
+}
+.update-form-btn-saved:active{
+ background-color: #fc3955;
+ color:white;
+}
+.update-form-btn-saved:focus{
+ background-color: #fc3955;
+ color:white;
+}
+.update-cancel_btn{
+  padding-right: 10px;
+}
+.update-save_btn{
+  padding-left: 10px;
+}
+@media screen and (max-width:768px) {
+  .update-cancel_btn{
+    padding-right: 0px;
+   
+  }
+  .update-save_btn{
+    padding-left: 0px;
+    padding-top:10px ;
+  }
 }
