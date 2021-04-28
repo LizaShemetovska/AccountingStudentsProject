@@ -13,7 +13,7 @@ namespace API.Services
       
         public Task Execute(string subject, string message, string email)
         {
-            var sendGridKey = "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";
+          
             var client = new SendGridClient(sendGridKey);
             var msg = new SendGridMessage()
             {
